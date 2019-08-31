@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: #222;
+	color: #bbb;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+a, a:visited, a:active, a:hover {
+	color: #ddd;
+}
+
+div#wrapper {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	width: 80%;
+	text-align: left;
+	background-color: #111;
+	min-height: 95%;
+}
+
+div#topnav {
+	text-align: right;
+}
+
+div#left_wrap {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding: 5px 5px 5px 5px;
+	width: 49%;
+	float: left;
+}
+
+div#right_wrap {
+	margin-left: 50%;
+	width: 49%;
+	padding: 5px;
+	padding-bottom: 15px;
+}
+
+div#copyright {
+	clear: both;
+	text-align: right;
+	font-size: 0.6em;
+	margin-right: 5px;
+}
+
+/** Quote page */
+div.quote_wrap {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	min-height: 74px;
+}
+
+div.quote_vote {
+	width: 25px;
+	text-align: center;
+	padding-top: 3px;
+	float: left;
+	line-height: 15px;
+}
+
+span.score {
+	vertical-align: 3px;
+}
+
+div.quote_body {
+	margin-left: 29px;
+	font-family: Courier;
+	font-size: 0.8em;
+}
+
+p.paginate {
+	font-size: 0.8em;
+}
+
+.paginate_item {
+	border: 1px solid #777;
+	padding: 4px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/** Quote colors */
+span.timestamp { color: #777; }
+span.action { color: #77c; }
+span.s1 { color: #A34272; }
+span.s2 { color: #1f7a1f; }
+span.s3 { color: #005cb9; }
+span.s4 { color: #a0a000; }
+span.s5 { color: #338080; }
+span.s6 { color: #8D3119; }
+span.s7 { color: #ee8800; }
+span.s8 { color: #33ad5c; }
+span.s9 { color: #3399aa; }
+span.s10 { color: #a800a8; }
+
+/** Submit page */
+textarea {
+	width: 600px;
+	height: 300px;
+	background-color: #000;
+	border: 1px solid #888;
+	color: #eee;
+}
+
+input[type=submit] {
+	color: #eee;
+	background-color: #000;
+	border: 1px solid #888;
+	padding: 4px;
+}
+
+/** Search page */
+input[type=text], input[type=password], select {
+	color: #eee;
+	background-color: #000;
+	border: 1px solid #888;
+	padding: 4px;
+}
+
+.search_left {
+	width: 307px;
+	text-align: right;
+	margin-right: 5px;
+	display: inline-block;
+}
+.search_right {
+	width: 308px;
+	display: inline-block;
+	text-align: left;
+}
+
+/** Other */
+.report {
+	font-size: 0.6em;
+}
+
+.clear {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.source {
+	font-size: 0.8em;
+}

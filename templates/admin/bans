@@ -1,0 +1,25 @@
+{>header /}
+
+<h2>{title}</h2>
+
+{#bans}
+	<p id="ban_{ip|d2u}"><b>IP: </b>{ip}<br />
+	<b>Banned on: </b>{date}<br />
+	<b>Reason: </b>{reason}<br />
+	<b><a onclick="unban('{ip}');" /}">Unban</a></p>
+{:else}
+	<p>Nobody has been banned. Yet.</p>
+{/bans}
+
+<div style="width: 620px;" class="center">
+<p>Ban a new IP:</p>
+<form action="{@url url="/admin/ban/add" /}" method="post">
+	<span class="search_left">IP:</span>
+	<span class="search_right"><input type="text" name="ip" /></span><br />
+	<span class="search_left">Reason:</span>
+	<span class="search_right"><textarea name="reason"></textarea></span><br />
+	<input type="submit" value="Ban IP" />
+</form>
+</div>
+
+{>footer /}

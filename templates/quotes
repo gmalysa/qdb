@@ -1,0 +1,23 @@
+{>header /}
+
+<h2>{title}</h2>
+
+{?count}
+{>paginate /}
+{/count}
+
+{#quotes}
+	{?id}
+		{>quote admin=admin /}
+	{/id}
+{:else}
+	<div class="quote_wrap clear">
+	There doesn't seem to be anything here!
+	</div>
+{/quotes}
+
+{?count}
+{>paginate /}
+{/count}
+
+{>footer /}

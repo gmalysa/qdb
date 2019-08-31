@@ -1,0 +1,14 @@
+{>header /}
+	<div id="left_wrap">
+		<p>Welcome to the SWC-IRC quote database. Our server is located at <a href="irc://irc.swc-irc.com:6667/">irc.swc-irc.com</a></p>
+		<p>This is a database of quotes collected over many years. Some are funny. Some are painful. None will be forgotten.</p>
+	</div>
+
+	<div id="right_wrap">
+		{#news}
+			{>news_post /}
+		{:else}
+			<p>No recent news.</p>
+		{/news}
+	</div>
+{>footer /}

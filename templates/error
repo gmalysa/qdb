@@ -1,0 +1,9 @@
+{>header title="Error"/}
+<div id="left_wrap">
+</div>
+
+<div id="right_wrap">
+{_msg}
+</div>
+
+{>footer /}

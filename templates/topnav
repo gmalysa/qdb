@@ -1,0 +1,17 @@
+<div id="topnav_wrap">
+<div id="topnav">
+	<a href="{@url url="/" /}">Home</a> | 
+	<a href="{@url url="/latest" /}">Latest</a> | 
+	<a href="{@url url="/random" /}">Random</a> | 
+	<a href="{@url url="/all" /}">All</a> | 
+	<a href="{@url url="/best" /}">Best</a> | 
+	<a href="{@url url="/worst" /}">Worst</a> | 
+	<a href="{@url url="/search" /}">Search</a> | 
+	<a href="{@url url="/submit" /}">Submit</a>
+	{?admin}
+	&nbsp;||| <a href="{@url url="/admin/pending" /}">Pending Quotes</a> 
+	| <a href="{@url url="/admin/report" /}">Review Reported Quotes</a> 
+	| <a href="{@url url="/admin/ban" /}">Manage Bans</a> 
+	{/admin}
+</div>
+</div>

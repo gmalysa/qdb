@@ -1,0 +1,14 @@
+<p class="paginate clear">{@paginate page="{page}" url="{url}" count="{count}"}
+	{@page_link}
+	<a href="{url}{page}" class="paginate_item">
+		{@if cond="'{text}'.length > 0"}
+			{text}
+		{:else}
+			{page}
+		{/if}
+	</a>
+	{/page_link}
+	{@page_ellipsis}...{/page_ellipsis}
+	{@page_active}<b class="paginate_item">{page}</b>{/page_active}
+{/paginate}
+</p>

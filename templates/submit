@@ -1,0 +1,32 @@
+{>header /}
+
+<h2>{title}</h2>
+
+{#quotes}
+	<h4>Preview</h4>
+	{>quote /}
+{/quotes}
+
+{?banned}
+<h4>Banned</h4>
+<p>Your IP address <b>{ip}</b> has been banned due to abuse of SWC qdb. If you believe this is in error, please contact <a href="mailto:chat@swcombine.com">chat@swcombine.com</a> with any questions.</p>
+{/banned}
+
+<div class="center" style="width: 620px;">
+<form action="{@url url="/submit" /}" method="post">
+
+{?captcha}
+<input type="hidden" name="captcha" value="{captcha_key}" />
+<p>Please evaluate the following simple math expression to complete your submission:</p>
+<p>
+<img src="{@url url="/captcha/{captcha_key}" /}" alt="Math here." /><br />
+Answer: <input type="text" name="captcha_answer" />
+</p>
+{/captcha}
+
+<textarea name="quote">{preview}</textarea><br /><br /><input type="submit" value="Submit Quote" name="submit" />
+ <input type="submit" value="Preview Quote" name="preview" />
+</form>
+</div>
+
+{>footer /}

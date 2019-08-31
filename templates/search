@@ -1,0 +1,32 @@
+{>header /}
+
+<h2>{title}</h2>
+
+<div class="center" style="width: 620px;">
+<form action="{@url url="/search" /}" method="post">
+<p>
+<span class="search_left">Search for:</span>
+<span class="search_right"><input type="text" name="search" /></span><br />
+
+<span class="search_left">Sort by:</span>
+<span class="search_right"><select name="sort"><option value="score">Score</option><option value="id">ID</option></select>
+ <select name="order"><option value="1">Descending</option><option value="2">Ascending</option></select></span><br />
+
+<span class="search_left">Display:</span>
+<span class="search_right"><select name="count">
+<option value="10">10</option>
+<option value="25">25</option>
+<option value="50">50</option>
+<option value="100">100</option>
+</select> quotes</span><br />
+
+<input type="submit" value="Search" /></p>
+
+<p>
+Tip: use % for a wildcard.
+</p>
+
+</form>
+</div>
+
+{>footer /}

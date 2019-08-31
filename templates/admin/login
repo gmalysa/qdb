@@ -1,0 +1,23 @@
+{>header /}
+
+<h2>{title}</h2>
+
+<div class="center" style="width: 620px;">
+
+{?failed}
+<p>Supplied username/password was invalid.</p>
+{/failed}
+
+<form action="{@url url="/admin/login" /}" method="post">
+<p>
+<span class="search_left">Username:</span>
+<span class="search_right"><input type="text" name="username" /></span><br />
+<span class="search_left">Password:</span>
+<span class="search_right"><input type="password" name="password" /></span><br />
+<input type="submit" value="Login" />
+</p>
+</form>
+
+</div>
+
+{>footer /}

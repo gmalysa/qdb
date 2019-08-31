@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>{?title}{title} - {/title}IRC Quote Database (qdb)</title>
+<link rel="stylesheet" type="text/css" href="{@url url="/static/css/style.css" /}"></link>
+<script type="text/javascript" src="{@url url="/dustjs-core.js" /}"></script>
+<script type="text/javascript" src="{@url url="/static/javascript/qdb.js" /}"></script>
+<script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	{>topnav admin=admin /}

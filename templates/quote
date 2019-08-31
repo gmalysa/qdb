@@ -1,0 +1,19 @@
+<div class="quote_wrap clear" id="quote_{id}">
+<a href="{@url url="/quote/{id}" /}">#{id}</a> <!-- - <a href="{@url url="/quote/{id}/report" /}" class="report">[report]</a> -->
+{?admin}
+{@if cond="{flags} == 1"}
+	- <a onclick="approve_quote({id});" /}">Approve</a> - <a onclick="reject_quote({id});" /}">Reject</a>
+{/if}
+- Submitted from {ip} 
+- <a onclick="delete_quote({id});">Delete</a>
+{/admin}
+	<div class="inner_quote">
+		<div class="quote_vote">
+			<img src="{@voted_img target="1" url_frag="/static/images/up" /}" id="up_{id}" onclick="vote('{@url url="/quote/{id}/up" /}', {id});" alt="up"/><br />
+			<span id="score_{id}" class="score">{score}</span><br />
+			<img src="{@voted_img target="-1" url_frag="/static/images/down" /}" id="down_{id}" onclick="vote('{@url url="/quote/{id}/down" /}', {id});" alt="down" />
+		</div>
+		<div class="quote_body">{quote|quotify|nl|s}</div>
+		<span class="clear"></span>
+	</div>
+</div>

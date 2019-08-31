@@ -1,0 +1,4 @@
+<div>
+<h4>{title} - {date} - {author}</h4>
+<p>{news|nl}</p>
+</div>

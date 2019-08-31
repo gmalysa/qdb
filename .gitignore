@@ -1,0 +1,10 @@
+*.swp
+.DS_Store/
+node_modules/
+sessions/
+config.json
+static/css
+static/javascript
+static/markdown
+default.log
+database.json

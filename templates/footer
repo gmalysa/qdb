@@ -1,0 +1,7 @@
+	<div id="copyright">
+		<a href="{@url url="disclaimer" /}">Disclaimer</a> | Pending: {pending_count} | Request time: {rendertime} ms | (c) 2013-15 the swc-irc team
+	</div>
+</div>
+</body>
+
+</html>
